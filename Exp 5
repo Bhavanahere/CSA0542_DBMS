@@ -16,9 +16,9 @@ mysql> select*from mentees;
 +-----------+-------------+-------+------------+-------+
 | regno     | name        | dept  | fathername | marks |
 +-----------+-------------+-------+------------+-------+
-| 192111719 | naveenreddy | civil | ramireddy  |   100 |
-| 192111234 | naveen      | ece   | murthi     |    98 |
-| 192111453 | vali        | mech  | hussain    |    99 |
+| 192111719 | niharika    | civil | ramireddy  |   100 |
+| 192111234 | bhavana     | ece   | murthi     |    98 |
+| 192111453 | pavani      | mech  | prakash    |    99 |
 +-----------+-------------+-------+------------+-------+
 3 rows in set (0.01 sec)
 
@@ -30,7 +30,7 @@ mysql> update mentees set subject="pdsd" where dept="ece";
 Query OK, 1 row affected (0.01 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
-mysql> update mentees set subject="dbms" where name="naveenreddy";
+mysql> update mentees set subject="dbms" where name="niharika";
 Query OK, 1 row affected (0.00 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
@@ -42,9 +42,9 @@ mysql> select*from mentees;
 +-----------+-------------+-------+------------+-------+---------+
 | regno     | name        | dept  | fathername | marks | subject |
 +-----------+-------------+-------+------------+-------+---------+
-| 192111719 | naveenreddy | civil | ramireddy  |   100 | dbms    |
-| 192111234 | naveen      | ece   | murthi     |    98 | pdsd    |
-| 192111453 | vali        | mech  | hussain    |    99 | beee    |
+| 192111719 | niharika    | civil | ramireddy  |   100 | dbms    |
+| 192111234 | bhavana     | ece   | murthi     |    98 | pdsd    |
+| 192111453 | pavani      | mech  | prakash    |    99 | beee    |
 +-----------+-------------+-------+------------+-------+---------+
 3 rows in set (0.00 sec)
 
@@ -52,8 +52,8 @@ mysql> select*from mentees where marks BETWEEN 95 and 99;
 +-----------+--------+------+------------+-------+---------+
 | regno     | name   | dept | fathername | marks | subject |
 +-----------+--------+------+------------+-------+---------+
-| 192111234 | naveen | ece  | murthi     |    98 | pdsd    |
-| 192111453 | vali   | mech | hussain    |    99 | beee    |
+| 192111234 | niharika | ece  | murthi     |    98 | pdsd    |
+| 192111453 | pavani   | mech | prakash    |    99 | beee    |
 +-----------+--------+------+------------+-------+---------+
 2 rows in set (0.01 sec)
 
@@ -61,7 +61,7 @@ mysql> select*from mentees where subject IN('pdsd');
 +-----------+--------+------+------------+-------+---------+
 | regno     | name   | dept | fathername | marks | subject |
 +-----------+--------+------+------------+-------+---------+
-| 192111234 | naveen | ece  | murthi     |    98 | pdsd    |
+| 192111234 | niharika | ece  | murthi     |    98 | pdsd    |
 +-----------+--------+------+------------+-------+---------+
 1 row in set (0.00 sec)
 
@@ -69,7 +69,7 @@ mysql> select*from mentees where marks NOT BETWEEN 95 and 99;
 +-----------+-------------+-------+------------+-------+---------+
 | regno     | name        | dept  | fathername | marks | subject |
 +-----------+-------------+-------+------------+-------+---------+
-| 192111719 | naveenreddy | civil | ramireddy  |   100 | dbms    |
+| 192111719 | niharika    | civil | ramireddy  |   100 | dbms    |
 +-----------+-------------+-------+------------+-------+---------+
 1 row in set (0.00 sec)
 
