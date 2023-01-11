@@ -29,10 +29,10 @@ mysql> select*from student;
 +-------+---------+---------+--------+--------+
 | stuid | stuname | studept | stuage | course |
 +-------+---------+---------+--------+--------+
-|     1 | naveen  | CSE     |     20 | NULL   |
-|     2 | raj     | ECE     |     18 | NULL   |
-|     3 | ram     | EEE     |     16 | NULL   |
-|     4 | vali    | IT      |     19 | NULL   |
+|     1 | bhavana | CSE     |     20 | NULL   |
+|     2 | niharika| ECE     |     18 | NULL   |
+|     3 | pavani  | EEE     |     16 | NULL   |
+|     4 | divya   | IT      |     19 | NULL   |
 +-------+---------+---------+--------+--------+
 4 rows in set (0.01 sec)
 
@@ -68,10 +68,10 @@ mysql> select*from student;
 +-------+---------+---------+--------+--------+---------+
 | stuid | stuname | studept | stuage | course | address |
 +-------+---------+---------+--------+--------+---------+
-|     1 | naveen  | CSE     |     20 | NULL   | NULL    |
-|     2 | raj     | ECE     |     18 | NULL   | NULL    |
-|     3 | ram     | EEE     |     16 | NULL   | NULL    |
-|     4 | vali    | IT      |     19 | NULL   | NULL    |
+|     1 | bhavana | CSE     |     20 | NULL   | NULL    |
+|     2 | niharika| ECE     |     18 | NULL   | NULL    |
+|     3 | pavani  | EEE     |     16 | NULL   | NULL    |
+|     4 | divya   | IT      |     19 | NULL   | NULL    |
 +-------+---------+---------+--------+--------+---------+
 4 rows in set (0.00 sec)
 
