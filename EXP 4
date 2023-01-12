@@ -1,0 +1,92 @@
+mysql> use engineer;
+Database changed
+mysql> create table menbers(name varchar(20),dept varchar(30),regno int(40));
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> desc menbers;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| name  | varchar(20) | YES  |     | NULL    |       |
+| dept  | varchar(30) | YES  |     | NULL    |       |
+| regno | int(40)     | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> insert into menbers values("bhavana","CSE",123456);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into menbers values("niharika","EEE",123456);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into menbers values("pavani","IT",234561);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into menbers values("ramya","AI",18766561);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select*from menbers;
++---------+------+----------+
+| name    | dept | regno    |
++---------+------+----------+
+| Bhavana | CSE  |   123456 |
+| Niharika| EEE  |   123456 |
+| Pavani  | IT   |   234561 |
+| Ramya   | AI   | 18766561 |
++---------+------+----------+
+4 rows in set (0.00 sec)
+
+mysql> update menbers set dept="mec" where name="234561";
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+mysql> desc menbers;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| name  | varchar(20) | YES  |     | NULL    |       |
+| dept  | varchar(30) | YES  |     | NULL    |       |
+| regno | int(40)     | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> select*from menbers;
++---------+------+----------+
+| name    | dept | regno    |
++---------+------+----------+
+| Bhavana| CSE  |   123456 |
+| Niharik| EEE  |   123456 |
+| Pavani | IT   |   234561 |
+| Ramya  | AI   | 18766561 |
++---------+------+----------+
+4 rows in set (0.00 sec)
+
+mysql> update menbers set dept="mec" where name="pavani";
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select*from menbers;
++---------+------+----------+
+| name    | dept | regno    |
++---------+------+----------+
+| Bhavana | CSE  |   123456 |
+| Niharika| EEE  |   123456 |
+| Pavani  | mec  |   234561 |
+| Ramya   | AI   | 18766561 |
++---------+------+----------+
+4 rows in set (0.00 sec)
+
+mysql> delete from menbers where regno="234561";
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select*from menbers;
++-------+------+----------+
+| name  | dept | regno    |
++-------+------+----------+
+| Bhavna| CSE  |   123456 |
+| Ramya | EEE  |   123456 |
+| Pavani| AI   | 18766561 |
++-------+------+----------+
+3 rows in set (0.00 sec)
+
+mysql>
